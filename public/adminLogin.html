@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/styles.css" rel="stylesheet">
+  <title>Stationova · Login</title>
+</head>
+<body class="flex justify-center items-center">
+
+    <form id="loginForm" method="POST" name="loginForm">
+        <div class="w-[300px] max-w-md">
+            <form class="bg-gray-200 shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                <h2 class="text-center text-[18px] font-bold mb-10 text-gray-800">Admin Login</h2>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="identity">
+                        Identite
+                    </label>
+                    <input class="bg-white border rounded-full w-full py-3 px-6 text-gray-700 focus:border-black" id="identity" name="identity" type="text" placeholder="Identite">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                        Mot de passe
+                    </label>
+                    <input class="bg-white border rounded-full w-full py-3 px-6 text-gray-700 mb-3 focus:border-black" id="password" type="password" name="password" placeholder="Mot de passe">
+                </div>
+                <div class="flex items-center justify-between mt-10">
+                    <button class="bg-black text-white font-bold py-3 px-6 rounded-full focus:outline-none" type="submit">
+                        Connexion
+                    </button>
+                </div>
+                <p class="mt-10 text-red-500" id="message"></p>
+            </form>
+        </div>
+    </form>
+
+
+    <script src="../src/scripts/adminLogin.js"></script>
+
+</body>
+</html>
